@@ -1,0 +1,22 @@
+.name-input {
+    font-size: 24px;
+    width: 30vw;
+    margin-left: 30px;
+}
+
+.individual-fruit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-btn {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fruit-list-box {
+    height: 50vh;
+    overflow-y: scroll;
+    padding: 10px 20px;
+    border: 1px solid black;
+}

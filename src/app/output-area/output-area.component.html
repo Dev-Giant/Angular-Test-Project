@@ -1,0 +1,23 @@
+<div class="output-area">
+    <p>{{ title }}</p>
+    <table> 
+        <thead> 
+           <tr> 
+              <th>Fruit</th> 
+              <th>Unit Price</th> 
+              <th>Qty</th> 
+              <th>Total</th> 
+           </tr> 
+        </thead> 
+        <tbody> 
+           <ng-container *ngFor="let fruit of fruitsOutput"> 
+                <tr *ngIf="fruit.qty != 0">
+                    <td>{{ fruit.name }}</td> 
+                    <td>${{ fruit.unitPrice }}</td> 
+                    <td>{{ fruit.qty }}</td>
+                    <td>${{ fruit.totalPrice }}</td> 
+                </tr>
+           </ng-container> 
+        </tbody> 
+     </table> 
+</div>

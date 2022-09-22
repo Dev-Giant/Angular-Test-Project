@@ -1,0 +1,18 @@
+<p>
+    <span>{{ customerName }}</span>
+    <input class="name-input" type="text" placeholder="Enter the Customer Name">
+</p>
+<br/>
+<br/>
+<p>{{ fruitsListTitle }}</p>
+<div class="fruit-list-box"> 
+    <p class="individual-fruit" *ngFor="let fruitEntry of fruitsEntries; let i = index;">
+        <span>
+            <span>{{ fruitEntry.name }}</span>
+            <span>(${{ fruitEntry.price }} each)</span>
+        </span>
+        <span class="add-btn" (click) = "add(i)">
+            Add
+        </span>
+    </p>
+</div>
